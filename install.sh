@@ -122,12 +122,7 @@ os_check(){
         exit 1
     fi
     
-    if [ "$lsb_dist" =  "ubuntu" ]; then
-        if  [ "$dist_version" != "20.04" ] && [ "$dist_version" != "18.04" ]; then
-            output "Unsupported Ubuntu version. Only Ubuntu 20.04 and 18.04 are supported."
-            exit 2
-        fi
-    elif [ "$lsb_dist" = "debian" ]; then
+    if [ "$lsb_dist" = "debian" ]; then
         if [ "$dist_version" != "10" ]; then
             output "Unsupported Debian version. Only Debian 10 is supported."
             exit 2
