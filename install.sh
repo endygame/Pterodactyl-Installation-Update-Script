@@ -32,13 +32,6 @@ preflight(){
 
     output "Automatic architecture detection initialized..."
     MACHINE_TYPE=`uname -m`
-    if [ ${MACHINE_TYPE} == 'x86_64' ]; then
-        output "64-bit server detected! Good to go."
-        output ""
-    else
-        output "Unsupported architecture detected! Please switch to 64-bit (x86_64)."
-        exit 4
-    fi
 
     output "Automatic virtualization detection initialized..."
     if [ "$lsb_dist" =  "ubuntu" ]; then
