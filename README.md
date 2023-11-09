@@ -2,7 +2,7 @@
 ✨All Major Operating Systems
 
 Installation script:
-`bash <(curl -sSL https://raw.githubusercontent.com/healer-op/Pterodactyl-Installation-Update-Script/main/install.sh)`
+`bash <(curl -sSL https://raw.githubusercontent.com/endygame/Pterodactyl-Installation-Update-Script/main/install.sh)`
 
 # custom hosting pages
 
